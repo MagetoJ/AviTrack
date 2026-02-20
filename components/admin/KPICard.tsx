@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { ArrowUp, ArrowDown, TrendingFlat } from 'lucide-react'
+import { ArrowUp, ArrowDown, Minus } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 
@@ -64,7 +64,7 @@ export function KPICard({
             <div className="flex items-center gap-1">
               {trend === 'up' && <ArrowUp className="h-4 w-4 text-success-600" />}
               {trend === 'down' && <ArrowDown className="h-4 w-4 text-error-600" />}
-              {trend === 'stable' && <TrendingFlat className="h-4 w-4 text-muted-foreground" />}
+              {trend === 'stable' && <Minus className="h-4 w-4 text-muted-foreground" />}
               {trendValue && (
                 <span className={cn('text-sm font-semibold', getTrendColor())}>
                   {trend === 'up' ? '+' : ''}{trendValue}%
