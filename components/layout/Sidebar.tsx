@@ -31,68 +31,38 @@ interface SidebarProps {
 const adminItems: SidebarItem[] = [
   {
     label: 'Dashboard',
-    href: '/admin/dashboard',
+    href: '/dashboard',
     icon: <LayoutDashboard className="h-5 w-5" />,
   },
   {
     label: 'Batches',
-    href: '/admin/batches',
+    href: '/batches',
     icon: <Layers className="h-5 w-5" />,
   },
   {
     label: 'Inventory',
-    href: '/admin/inventory',
+    href: '/inventory',
     icon: <Package className="h-5 w-5" />,
-  },
-  {
-    label: 'Staff',
-    href: '/admin/staff',
-    icon: <Users className="h-5 w-5" />,
-  },
-  {
-    label: 'Alerts',
-    href: '/admin/alerts',
-    icon: <AlertCircle className="h-5 w-5" />,
-  },
-  {
-    label: 'Reports',
-    href: '/admin/reports',
-    icon: <FileText className="h-5 w-5" />,
   },
 ]
 
 const staffItems: SidebarItem[] = [
   {
     label: 'Daily Entry',
-    href: '/staff/daily-entry',
+    href: '/daily-entry',
     icon: <ClipboardList className="h-5 w-5" />,
-  },
-  {
-    label: 'My Submissions',
-    href: '/staff/submissions',
-    icon: <FileText className="h-5 w-5" />,
   },
 ]
 
 const customerItems: SidebarItem[] = [
   {
     label: 'Catalog',
-    href: '/customer/catalog',
+    href: '/catalog',
     icon: <ShoppingCart className="h-5 w-5" />,
-  },
-  {
-    label: 'Cart',
-    href: '/customer/cart',
-    icon: <ShoppingCart className="h-5 w-5" />,
-  },
-  {
-    label: 'Orders',
-    href: '/customer/orders',
-    icon: <Package className="h-5 w-5" />,
   },
   {
     label: 'Traceability',
-    href: '/customer/traceability',
+    href: '/traceability',
     icon: <Activity className="h-5 w-5" />,
   },
 ]
